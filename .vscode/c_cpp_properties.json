@@ -1,0 +1,30 @@
+{
+  "configurations": [
+    {
+      "name": "macOS",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/usr/local/include",
+        "/usr/local/Cellar/gcc/9.1.0/lib/gcc/9/gcc/x86_64-apple-darwin18/9.1.0/include",
+        "/usr/local/Cellar/gcc/9.1.0/include/c++/9.1.0",
+        "/usr/local/Cellar/gcc/9.1.0/include/c++/9.1.0/x86_64-apple-darwin18"
+      ],
+      "defines": [],
+      "macFrameworkPath": [
+        "/System/Library/Frameworks",
+        "/Library/Frameworks",
+        "${workspaceFolder}/**"
+      ],
+      "compilerPath": "/usr/local/bin/g++-9",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "${default}",
+      "browse": {
+        "path": ["${workspaceFolder}"],
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": ""
+      }
+    }
+  ],
+  "version": 4
+}
