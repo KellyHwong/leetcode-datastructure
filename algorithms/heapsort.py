@@ -26,7 +26,13 @@ def main():
 
     # 堆的构造方法就是树的遍历过程的逆过程
     # 左边，右边，下一层，左边，右边
-    # 数据结构，队列，
+    # 数据结构，队列
+    # 构造一个队列，初始头节点
+    # 进一个节点，后面加该节点的左右子节点
+    link_queue = LinkQueue()
+    for i in range(10):
+        link_queue.push(i)
+    link_queue.traverse()
 
 
 if __name__ == "__main__":
