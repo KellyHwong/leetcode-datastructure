@@ -5,9 +5,10 @@
 # @Link    : https://zh.wikipedia.org/zh-cn/二叉树#存儲二元樹的方法
 # @Version : $Id$
 
-from tree import Tree, TreeNode
-from stack import Stack
-from queue import LinkQueue
+from datastructure.tree import Tree, TreeNode
+from datastructure.stack import Stack
+from datastructure.queue import LinkQueue
+
 
 def main():
     elements = [1, 2, 3, 4, 0, 5, 6, 0, 7]
@@ -36,6 +37,7 @@ def main():
     ret = tree.pre_order_iter(tree.root)
     # node_queue.traverse()
     print(ret)
+
 
 if __name__ == '__main__':
     main()

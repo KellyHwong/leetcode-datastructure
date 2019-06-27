@@ -5,7 +5,9 @@
 # @Link    : https://zh.wikipedia.org/zh-cn/二叉树#存儲二元樹的方法
 # @Version : $Id$
 
-from stack import Stack
+from datastructure.stack import Stack
+import sys
+import os
 
 
 class Tree():
@@ -66,7 +68,7 @@ class Tree():
 
 
 def main():
-    pass
+    print(sys.path)
 
 
 if __name__ == '__main__':
