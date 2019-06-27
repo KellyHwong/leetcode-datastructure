@@ -29,21 +29,23 @@ class Solution:
             if grid[c[0]][c[1]] == '1':
                 one_coords.append(c)
         # print(one_coords)
+        if one_coords == []:
+            return 0
         islands = []
         island = []
+
         for c in one_coords:
             if island == []:
                 island.append(c)
-            elif belongTo(c, island):
+                continue
+            if belongTo(c, island):
                 island.append(c)
-                # print(island)
-            else:
+            else:  # 新集合
                 islands.append(island)
-                # print(islands)
-                island = []
-        if islands == []:
-            islands.append(island)
-        # print(len(islands))
+                island = [c]
+        # 最后一个
+        islands.append(island)
+        print(islands)
         return len(islands)
 
 
@@ -56,8 +58,12 @@ def main():
              ["1", "1", "0", "0", "0"],
              ["0", "0", "1", "0", "0"],
              ["0", "0", "0", "1", "1"]]
+    test3 = [["1", "1", "1"],
+             ["0", "1", "0"],
+             ["1", "1", "1"]]
     sol = Solution()
-    print(sol.numIslands(test))
+    # belongTo((3, 3), test2)
+    print(sol.numIslands(test3))
 
 
 if __name__ == "__main__":
