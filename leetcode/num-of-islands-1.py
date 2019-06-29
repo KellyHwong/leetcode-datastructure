@@ -16,6 +16,23 @@ def belongTo(c: tuple, island: list):
     return False
 
 
+def merge(islands: list) -> list:
+    """
+    等待归并的几个集合
+    """
+    merged = []
+    island = islands.pop(0)
+    while islands:
+        i = 0
+        for _ in islands.copy():
+            for c in _:
+                if belongTo(c, _):
+                    island += islands.pop(i)
+            i += 1
+        merged.append(island)
+    return merged
+
+
 class Solution:
     def numIslands(self, grid: list) -> int:
         if grid == []:
@@ -45,6 +62,7 @@ class Solution:
                 island = [c]
         # 最后一个
         islands.append(island)
+        islands = merge(islands)
         print(islands)
         return len(islands)
 

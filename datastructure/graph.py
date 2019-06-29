@@ -21,38 +21,66 @@ class GraphNode(object):
         self.adjacent_set = None  # TODO 使用Python的set数据结构
 
 
+mat = [[1, 2, 3, 4],
+       [5, 6, 7, 8],
+       [9, 10, 11, 12]]
+
+"""
+i, j = 0 意思是i节点指向j节点
+"""
+adj = [[0, 1, 1, 0, 0],
+       [0, 0, 1, 1, 0],
+       [0, 1, 1, 1, 0],
+       [1, 0, 0, 0, 0],
+       [0, 0, 1, 1, 0]]
+
+
+def visit(i):
+    print("Node %d visited!" % i)
+
+
+def BFS(adj):
+    """
+    广度优先
+    先看周围（邻接的点）
+    再看周围的周围
+    有点类似二叉树层序初始化
+    控制访问的方法是设置flag
+    """
+
+    start = 0  # 从第一个节点开始
+    queue = [start]
+    visit(start)
+    visited = [1, 0, 0, 0, 0]
+    while queue:
+        start = queue[0]
+        for i in range(len(adj[start])):
+            if adj[start][i] == 1 and visited[i] == 0:
+                visit(i)
+                visited[i] = 1
+                queue.append(i)
+        del queue[0]
+
+
+def DFS(adj):
+    """
+    深度优先
+    TODO
+    """
+
+    start = 0  # 从第一个节点开始
+    queue = [start]
+    visit(start)
+    visited = [1, 0, 0, 0, 0]
+    while queue:
+        start = queue[0]
+        for i in range(len(adj[start])):
+            if adj[start][i] == 1 and visited[i] == 0:
+                visit(i)
+                visited[i] = 1
+                queue.append(i)
+        del queue[0]
+
+
 if __name__ == "__main__":
-    test = [[1, 2, 3, 4],
-            [5, 6, 7, 8],
-            [9, 10, 11, 12]]
-    # 矩阵转化为图
-    l = []
-    h = len(test)
-    w = len(test[0])
-    coords = list(itertools.product(list(range(h)), list(range(w))))
-    for c in coords:
-        data = (c, test[c[0]][c[1]])  # 坐标元组 和 数据 # 这样数据存了两份，但好处是原来的矩阵不需要
-        # 双指针法构造邻接链表
-        adj = None  # SLinkedList()
-        ptr = None
-        # 邻接表存的是索引，不是指针，索引可以用hash
-        # 但这里用顺序表
-        # 上下左右，相邻
-        for c2 in [(c[0]+1, c[1]), (c[0]-1, c[1]), (c[0], c[1]+1), (c[0], c[1]-1)]:
-            if (0 <= c2[0] < h) and (0 <= c2[1] < w):
-                new = SLinkedList(data=c2, next=None)
-                if not ptr:
-                    ptr = new
-                    adj = ptr
-                else:
-                    ptr.next = new
-                    ptr = ptr.next
-
-        node = GraphNode(data=data, adjacent=adj)
-        l.append(node)  # l中存入元素
-
-    print(l[0].adjacent)
-    # traverse
-    for _ in l[7].adjacent.traverse():
-        print("travers coord:", _)
-        print("travers data:", test[_[0]][_[1]])
+    BFS(adj)
