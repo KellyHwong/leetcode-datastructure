@@ -1,8 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @Date    : 2019-06-24 21:11:06
+# @Date    : 2019-06-24 20:20:50
 # @Author  : Your Name (you@example.org)
-# @Link    : http://example.org
+# @Link    : https://zh.wikipedia.org/wiki/%E5%9B%BE_(%E6%95%B0%E5%AD%A6)
 # @Version : $Id$
 
 import os
@@ -22,17 +22,16 @@ class GraphNode(object):
 
 
 if __name__ == "__main__":
-    island_grids = [["1", "1", "1", "1", "0"],
-                    ["1", "1", "0", "1", "0"],
-                    ["1", "1", "0", "0", "0"],
-                    ["0", "0", "0", "0", "0"]]
+    test = [[1, 2, 3, 4],
+            [5, 6, 7, 8],
+            [9, 10, 11, 12]]
     # 矩阵转化为图
     l = []
     h = len(test)
     w = len(test[0])
     coords = list(itertools.product(list(range(h)), list(range(w))))
     for c in coords:
-        data = (c, test[c[0]][c[1]])  # 坐标元组 和 数据 # 这样数据存了两份，但好处是原来的矩阵不需要了
+        data = (c, test[c[0]][c[1]])  # 坐标元组 和 数据 # 这样数据存了两份，但好处是原来的矩阵不需要
         # 双指针法构造邻接链表
         adj = None  # SLinkedList()
         ptr = None
@@ -54,4 +53,6 @@ if __name__ == "__main__":
 
     print(l[0].adjacent)
     # traverse
-    l[7].adjacent.traverse()
+    for _ in l[7].adjacent.traverse():
+        print("travers coord:", _)
+        print("travers data:", test[_[0]][_[1]])
