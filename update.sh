@@ -1,6 +1,6 @@
 #!/bin/sh
 git add -A
-git commit -am "subset binary"
+git commit -am "kth largest"
 git push
 if which gitbook > /dev/null; then
     cd source
