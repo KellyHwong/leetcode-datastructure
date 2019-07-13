@@ -1,4 +1,4 @@
-## Subset 子集
+## Subsets 子集（确切地说是幂集）
 
 ### 动态规划法
 dp[i] means the subsets of length i.

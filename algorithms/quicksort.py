@@ -64,9 +64,7 @@ def main():
     # print(sys.getrecursionlimit()) # 1000
 
     N = 1000000
-    l = []
-    for _ in range(N):
-        l.append(random.randint(-2**31, 2**31-1))
+    l = [random.randint(-2**31, 2**31-1) for _ in range(N)]
     # print(l)
     start = time.clock()
     q = quicksort(l)
