@@ -1,6 +1,6 @@
 #!/bin/sh
 git add -A
-git commit -am "kth largest"
+git commit -am "画图统计bubblesort和quicksort时间复杂度"
 git push
 if which gitbook > /dev/null; then
     cd source

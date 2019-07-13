@@ -1,5 +1,4 @@
-leetcode 数据结构
-================
+# leetcode 数据结构
 
 本文档使用 [Gitbook](https://github.com/GitbookIO/gitbook) 制作，[Github 仓库地址](https://github.com/KellyHwong/leetcode-datastructure)。
 
@@ -9,5 +8,4 @@ leetcode 数据结构
 
 ### 作者：
 
-* [KellyHwong](https://github.com/KellyHwong)
-
+- [KellyHwong](https://github.com/KellyHwong)

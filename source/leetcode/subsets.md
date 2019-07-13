@@ -30,3 +30,4 @@ dp[3] = [1,2,3],[1,2,4],[1,3,4]是怎么生成的呢，都去跟[1] [2] [3] [4]�
 ## 参考
 [https://leetcode.com/problems/subsets/discuss/329218/Python-DP](https://leetcode.com/problems/subsets/discuss/329218/Python-DP)
 [维基：幂集](https://zh.wikipedia.org/wiki/%E5%86%AA%E9%9B%86)
+[yisuang1186:Subsets](https://yisuang1186.gitbooks.io/-shuatibiji/subsets.html)
