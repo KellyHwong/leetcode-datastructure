@@ -45,7 +45,45 @@ def hash3(key: str, tablesize: int) -> int:
     return hashval
 
 
-def main():
+class HashTable(object):
+    def __init__(self, tablesize):
+        self.tablesize = tablesize
+        self.table = [None] * self.tablesize
+
+    def hash(self, key: int) -> int:
+        return key % self.tablesize
+
+    def find(self, key: int):  # insert
+        """
+        h_i(X)=(Hash(X) + F(i))
+        F(i) = i
+        这里写成递增形式，每次加一
+        如果按照定义，是
+        init = self.hash(key)
+        current_pos = init
+        i = 0
+        i += 1
+        current_pos = init + i
+        """
+        current_pos = self.hash(key)
+        print("current_pos")
+        print(current_pos)
+        inc = 1
+        while self.table[current_pos] != None and self.table[current_pos] != key:
+            current_pos += inc
+            if current_pos >= self.tablesize:
+                current_pos -= self.tablesize
+            print("self tablesize")
+            print(self.tablesize)
+            print("current_pos")
+            print(current_pos)
+        return current_pos
+
+    def insert(self, hash, key):
+        self.table[hash] = key
+
+
+def test_hash():
     key = "12345678"
     tablesize = 10007
     hashval = hash1(key, tablesize)
@@ -54,6 +92,26 @@ def main():
     print(hashval)
     hashval = hash3(key, tablesize)
     print(hashval)
+
+
+def test_open():
+    tablesize = 10
+    H = HashTable(tablesize)
+    print(H.table)
+    l = [89, 18, 49, 58, 69]
+    l = [7977, 6734, 5141, 5949, 4895, 1530, 8784, 8314, 8522, 3193]  # 刚好填满
+    l = [7977, 6734, 5141, 5949, 4895, 1530, 8784, 8314, 8522, 3193, 1]  # 死循环
+    for e in l:
+        f = H.find(e)
+        print("find")
+        print(f)
+        H.insert(f, e)
+        print("after insert")
+        print(H.table)
+
+
+def main():
+    test_open()
 
 
 if __name__ == "__main__":
