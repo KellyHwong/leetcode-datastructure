@@ -1,6 +1,6 @@
 #!/bin/sh
 git add -A
-git commit -am "画图统计bubblesort和quicksort时间复杂度"
+git commit -am "hash算法 `date`"
 git push
 if which gitbook > /dev/null; then
     cd source
