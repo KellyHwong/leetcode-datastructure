@@ -1,6 +1,6 @@
 #!/bin/sh
 git add -A
-git commit -am "hash算法 `date`"
+git commit -am "逆波兰表达式 `date`"
 git push
 if which gitbook > /dev/null; then
     cd source
