@@ -1,4 +1,4 @@
 #!/bin/sh
 git add -A
-git commit -am "老鼠和毒药问题 `date`"
+git commit -am "single element `date`"
 git push
