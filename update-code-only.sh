@@ -1,4 +1,4 @@
 #!/bin/sh
 git add -A
-git commit -am "leetcode 35. Search Insert Position `date`"
+git commit -am "老鼠和毒药问题 `date`"
 git push
