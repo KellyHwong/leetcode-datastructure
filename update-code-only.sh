@@ -1,4 +1,4 @@
 #!/bin/sh
 git add -A
-git commit -am "most commom word code `date`"
+git commit -am "leetcode binary search `date`"
 git push
