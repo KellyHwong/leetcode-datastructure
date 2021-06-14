@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date    : 2019-06-24 20:20:50
-# @Author  : Your Name (you@example.org)
-# @Link    : https://zh.wikipedia.org/wiki/%E5%9B%BE_(%E6%95%B0%E5%AD%A6)
+# @Author  : Kelly Hwong (you@example.org)
+# @RefLink : https://zh.wikipedia.org/wiki/%E5%9B%BE_(%E6%95%B0%E5%AD%A6)
 # @Version : $Id$
 
 import os
 import itertools
-from linkedlist import SLinkedList
+from datastructure.LinkedList import SLinkedList
 
 
 class GraphNode(object):
@@ -19,20 +19,6 @@ class GraphNode(object):
         self.data = data
         self.adjacent = adjacent
         self.adjacent_set = None  # TODO 使用Python的set数据结构
-
-
-mat = [[1, 2, 3, 4],
-       [5, 6, 7, 8],
-       [9, 10, 11, 12]]
-
-"""
-i, j = 0 意思是i节点指向j节点
-"""
-adj = [[0, 1, 1, 0, 0],
-       [0, 0, 1, 1, 0],
-       [0, 1, 1, 1, 0],
-       [1, 0, 0, 0, 0],
-       [0, 0, 1, 1, 0]]
 
 
 def visit(i):
@@ -80,6 +66,23 @@ def DFS(adj):
                 visited[i] = 1
                 queue.append(i)
         del queue[0]
+
+
+def main(parameter_list):
+    """
+    docstring
+    """
+    mat = [[1, 2, 3, 4],
+           [5, 6, 7, 8],
+           [9, 10, 11, 12]]
+    """
+    i, j = 0 意思是i节点指向j节点
+    """
+    adj = [[0, 1, 1, 0, 0],
+           [0, 0, 1, 1, 0],
+           [0, 1, 1, 1, 0],
+           [1, 0, 0, 0, 0],
+           [0, 0, 1, 1, 0]]
 
 
 if __name__ == "__main__":
