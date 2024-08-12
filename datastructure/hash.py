@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date    : Jul-21-19 19:01
-# @Author  : Your Name (you@example.org)
+# @Author  : Kan HUANG (dianhuangkan@gmail.com)
 # @Link    : http://example.org
 
 import os
@@ -29,7 +29,7 @@ def hash2(key: str, tablesize: int) -> int:
     按位加权相加，相当于27进制
     “3个字母（忽略空格）有26^3=17576种组合，但是参考足够多词汇的词典发现，（我觉得意思是开头三个字母）3个字母的不同组合数实际只有2851”
     """
-    assert(len(key) >= 3)
+    assert (len(key) >= 3)
     return (ord(key[0]) + 27 * ord(key[1]) + 729 * ord(key[2])) % tablesize
 
 

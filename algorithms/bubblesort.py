@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date    : Jul-13-19 18:02
-# @Author  : Your Name (you@example.org)
+# @Author  : Kan HUANG (dianhuangkan@gmail.com)
 # @Link    : http://example.org
 
 import os

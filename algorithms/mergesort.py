@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date    : 2019-06-24 20:13:16
-# @Author  : Your Name (you@example.org)
+# @Author  : Kan HUANG (dianhuangkan@gmail.com)
 # @Link    : https://zh.wikipedia.org/zh-cn/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F
 # @Version : $Id$
 

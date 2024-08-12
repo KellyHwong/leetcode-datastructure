@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date    : Jul-08-19 21:40
-# @Author  : Your Name (you@example.org)
+# @Author  : Kan HUANG (dianhuangkan@gmail.com)
 # @Link    : https://leetcode.com/problems/subsets/discuss/329658/44-ms-Python-solution
 
 import os

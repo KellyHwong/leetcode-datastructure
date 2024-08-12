@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Date    : 2019-06-29 23:27:34
 # @Update  : Oct-03-20 00:59
-# @Author  : Kelly Hwong (dianhuangkan@gmail.com)
+# @Author  : Kan HUANG (dianhuangkan@gmail.com)
 # @RefLink : https://docs.python.org/zh-cn/3/library/collections.html?highlight=deque#collections.deque
 
 import os

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date    : Jun-14-21 17:07
-# @Author  : Kelly Hwong (dianhuangkan@gmail.com)
+# @Author  : Kan HUANG (dianhuangkan@gmail.com)
 # @RefLink : https://leetcode.com/problems/reverse-linked-list/
 
 # Definition for singly-linked list.

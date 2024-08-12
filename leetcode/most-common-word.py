@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date    : Jul-24-19 12:55
-# @Author  : Your Name (you@example.org)
+# @Author  : Kan HUANG (dianhuangkan@gmail.com)
 # @Link    : https://leetcode.com/contest/weekly-contest-80/problems/most-common-word/
 
 import os

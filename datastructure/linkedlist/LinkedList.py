@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date    : Jun-14-21 17:04
-# @Author  : Kelly Hwong (dianhuangkan@gmail.com)
-# @RefLink : http://example.org
+# @Author  : Kan HUANG (dianhuangkan@gmail.com)
 
 from typing import Any
 

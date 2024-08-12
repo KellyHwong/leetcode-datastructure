@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Date    : 2019-05-23 22:00:20
-# @Author  : Your Name (you@example.org)
+# @Author  : Kan HUANG (dianhuangkan@gmail.com)
 # @Link    : https://leetcode.com/problems/game-of-life/
 # @Version : $Id$
 
 import os
 import itertools
+
 
 def get_neighbors(coord, width, height):
     x, y = coord[0], coord[1]
@@ -18,6 +19,7 @@ def get_neighbors(coord, width, height):
         if (not neighbor[0] in range(height)) or (not neighbor[1] in range(width)):
             neighbors.remove(neighbor)
     return neighbors
+
 
 def update(board, coord, width, height):
     neighbors = get_neighbors(coord, width, height)
@@ -43,6 +45,7 @@ def update(board, coord, width, height):
     # by default
     return False
 
+
 class Solution:
     def gameOfLife(self, board) -> None:  # board: List[List[int]]
         """
@@ -66,7 +69,6 @@ class Solution:
         for to_up in to_update:
             (x, y) = to_up
             board[x][y] = 1 - board[x][y]
-
 
 
 def main():
@@ -97,6 +99,7 @@ def main():
         (x, y) = to_up
         board[x][y] = 1 - board[x][y]
     print(board)
+
 
 if __name__ == '__main__':
     main()

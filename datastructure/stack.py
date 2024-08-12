@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date    : Jul-19-20
-# @Author  : Kelly Hwong (dianhuangkan@gmail.com)
-# @Link    : http://example.org
+# @Author  : Kan HUANG (dianhuangkan@gmail.com)
 
 
 class Stack(object):
@@ -42,7 +41,7 @@ class Stack(object):
         return len(self.list)
 
 
-def main():
+def stack_test():
     l = [1, 2, 3]
     s = Stack(l)  # directly initialized by a list
 
@@ -56,6 +55,20 @@ def main():
     for _ in range(len(s)):
         s.pop()
         print(s.list)
+
+
+def fib_recursive(n):
+    # 使用递归
+    if n == 1 or n == 2:
+        return 1
+    return fib_recursive(n-1)+fib_recursive(n-2)
+
+
+def main():
+    # stack_test()
+
+    # 应用，用栈将递归转换成循环
+    s = Stack()
 
 
 if __name__ == '__main__':

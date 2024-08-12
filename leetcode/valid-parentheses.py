@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date    : Jul-23-19 10:18
-# @Author  : Your Name (you@example.org)
+# @Author  : Kan HUANG (dianhuangkan@gmail.com)
 # @Link    : http://example.org
 
 import os
@@ -40,13 +40,13 @@ class Solution2:
         # stack init
         stk = list()
         for c in s:
-                # ignore 1st character
+            # ignore 1st character
             if len(stk) != 0:
                 # if it is correct pair
                 if (stk[-1] == "(" and c == ")") \
                         or (stk[-1] == "[" and c == "]") \
                         or (stk[-1] == "{" and c == "}"):
-                        # then pop and continue
+                    # then pop and continue
                     stk.pop()
                     continue
             stk.append(c)

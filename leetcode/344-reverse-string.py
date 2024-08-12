@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date    : Dec-09-22 11:45
-# @Author  : Kan HUANG (kan.huang.hkust@gmail.com)
+# @Author  : Kan HUANG (dianhuangkan@gmail.com)
 # @RefLink : https://leetcode.com/problems/reverse-string/
 
 from typing import List
