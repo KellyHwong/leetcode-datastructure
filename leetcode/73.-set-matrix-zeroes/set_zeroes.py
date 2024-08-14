@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Date    : 2019-06-06 02:03:55
-# @Author  : Kan HUANG (dianhuangkan@gmail.com)
+# @Author  : Kelley HUANG (dianhuangkan@gmail.com)
 # @Link    : https://leetcode.com/problems/set-matrix-zeroes/
 # @Ref     : https://cloud.tencent.com/developer/article/1775937
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date    : Feb-13-20 20:39
-# @Author  : Kan HUANG (dianhuangkan@gmail.com)
+# @Author  : Kelley HUANG (dianhuangkan@gmail.com)
 # @Link    : https://leetcode.com/problems/add-two-numbers/
 
 from typing import List

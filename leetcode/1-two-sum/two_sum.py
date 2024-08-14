@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Date    : Jul-12-19 23:01
-# @Author  : Kan HUANG (dianhuangkan@gmail.com)
+# @Author  : Kelley HUANG (dianhuangkan@gmail.com)
 # @Link    : https://leetcode.com/problems/two-sum
 
 import os
